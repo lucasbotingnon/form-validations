@@ -12,29 +12,47 @@
 
 <body>
     <div class="form-container">
-        <span class="title">Full Form Validation</span>
-        <form id="form">
-            <input type="text">
-            <input type="text">
+        <span class="title">Validação Completa de Formulário</span>
+        <form id="form" name="form">
+
+            <label class="radio-button">Conta Pessoal
+                <input type="radio" checked="checked" name="account-type">
+                <span class="check-mark"></span>
+            </label>
+
+            <label class="radio-button">Conta Empresarial
+                <input type="radio" checked="checked" name="account-type">
+                <span class="check-mark"></span>
+            </label>
+
+            <!-- Informações -->
+            <input type="text" name="informacao-nome" placeholder="Primeiro Nome*">
+            <input type="text" name="informacao-sobrenome" placeholder="Ultimo Nome*">
+            <input type="text" name="informacao-telefone" placeholder="Telefone*">
+            <input type="text" name="informacao-email" placeholder="E-mail*">
+            <input type="text" name="informacao-cpf" placeholder="CPF">
             
+            <!-- Endereço -->
+            <input type="text" name="endereco-cep" placeholder="CEP*">
+            <input list="endereco-estado" placeholder="Estado*">
+            <input list="endereco-cidade" placeholder="Cidade*">
+            <input type="text" name="endereco-rua" placeholder="Rua">
+            <input type="text" name="endereco-bairro" placeholder="Bairro">
+            <input type="text" name="endereco-complemento" placeholder="Complemento">
+
             <select>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="">Assunto*</option>
             </select>
+
+            <textarea placeholder="Mensagem*"></textarea>
             
-            <textarea></textarea>
-            
-            <input list="browsers">
-            
-            <datalist id="browsers">
-                <option value="Internet Explorer">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
+            <datalist id="endereco-cidade">
+            </datalist>
+            <datalist id="endereco-estado">
             </datalist>
 
             <button>Enviar</button>
+
         </form>
     </div>
 
