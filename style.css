@@ -176,6 +176,7 @@ body {
 
   #form textarea {
     grid-column: span 2;
+    resize: none;
   }
 
   #form button {
